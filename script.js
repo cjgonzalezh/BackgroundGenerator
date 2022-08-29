@@ -5,7 +5,7 @@ var body = document.getElementById("gradient");
 var btn = document.getElementById("random");
 
 
-function setGradient() {
+function csetGradient() {
 	body.style.background = 
 	"linear-gradient(to right, " 
 	+ color1.value 
@@ -28,11 +28,12 @@ function getRandomColor() {
 function randomize (){
 	color1.value = getRandomColor();
 	color2.value = getRandomColor();
-	setGradient();
+	csetGradient();
 }
 
-color1.addEventListener("input", setGradient);
+color1.addEventListener("input", csetGradient);
 
-color2.addEventListener("input", setGradient);
+color2.addEventListener("input", csetGradient);
 
 btn.addEventListener("click", randomize);
+//sad
